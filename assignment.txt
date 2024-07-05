@@ -1,0 +1,26 @@
+def main():
+    user_info = {}
+
+    # Greet User
+    print("Bot: Hello! I'm here to help you. What's your name?")
+    user_info['name'] = input("You: ")
+
+    # Ask for Name
+    print(f"Bot: Nice to meet you, {user_info['name']}! What's your email address?")
+    user_info['email'] = input("You: ")
+
+    # Ask for Email
+    print(f"Bot: Got it, {user_info['name']}. And which company do you work for?")
+    user_info['company'] = input("You: ")
+
+    # Thank the user and store information
+    print(f"Bot: Thank you for the information, {user_info['name']}. Have a great day!")
+
+    # Store Information in In-Memory Structure (Dictionary)
+    print("\nCollected Information:")
+    for key, value in user_info.items():
+        print(f"{key.capitalize()}: {value}")
+
+if __name__ == "__main__":
+    main()
+
